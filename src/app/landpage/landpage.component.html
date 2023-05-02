@@ -3,8 +3,8 @@
     <div class="card">
         <h3 class="card-tittle">Para poder acceder a nuestro catalogo es necesario crear una cuenta</h3>
         <div class="buttons">
-            <button [routerLink]="['/login']">Iniciar sesion</button>
-            <button [routerLink]="['/register']">Crear cuenta</button>
+            <button (click)="navigate('/login')" mat-raised-button color="primary">Iniciar sesión</button>
+            <button (click)="navigate('/register')" mat-raised-button color="primary">Crear cuenta</button>
         </div>
     </div>
 </div>
