@@ -1,1 +1,20 @@
-<p>login.component.ts works!</p>
+<div class="main-container">
+    <h1 class="tittle">Iniciar sesión</h1>
+    <div class="card">
+        <div class="inputs">
+            <mat-form-field>
+                <mat-label>Email</mat-label>
+                <input type="email" matInput [(ngModel)]="email">
+              </mat-form-field>
+            <mat-form-field>
+                <mat-label>Contraseña</mat-label>
+                <input type="password" matInput  [(ngModel)]="password">
+              </mat-form-field>
+              <a class="link" href="">¿Has olvidado la contraseña?</a>
+        </div>
+        <div class="buttons">
+            <button (click)="login(email , password)"  mat-raised-button color="primary">Iniciar sesión</button>
+            <!-- <button mat-raised-button color="primary">Crear cuenta</button> -->
+        </div>
+    </div>
+</div>
